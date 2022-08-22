@@ -14,7 +14,6 @@ function searchCountry() {
 
   fetchCountries(inputText)
     .then(value => {
-      console.log(value);
       if (value.length === 1) {
         renderPost(value);
       } else if (value.length >= 2 && value.length <= 10) {
